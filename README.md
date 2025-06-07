@@ -26,26 +26,8 @@ A lightweight Python tool that watches a file (like an SSH public key) and uploa
 ##  Usage
 
 ```bash
-python watcher.py \
-  --file ./ssh-ca/id_rsa.pub \
-  --consul-url http://localhost:8500 \
-  --kv-key ca/pub-key/id_rsa.pub \
-  --token 19713bd9-273e-2377-ba52-228b7b5b136e \
-  --interval 3
+Customise the variables inside the python file according to your use.
 ```
-
----
-
-##  CLI Options
-
-| Argument       | Description                                                                |
-| -------------- | -------------------------------------------------------------------------- |
-| `--file`       | Path of the file to monitor. Example: `./ssh-ca/id_rsa.pub`                |
-| `--consul-url` | Base URL of your Consul server. Example: `http://localhost:8500`           |
-| `--kv-key`     | KV path where content should be uploaded. Example: `ca/pub-key/id_rsa.pub` |
-| `--token`      | (Optional) Consul ACL token for authentication                             |
-| `--interval`   | (Optional) Polling interval in seconds (default: `2`)                      |
-
 ---
 
 ##  Example Use Cases
