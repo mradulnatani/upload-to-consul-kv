@@ -26,7 +26,12 @@ A lightweight Python tool that watches a file (like an SSH public key) and uploa
 ##  Usage
 
 ```bash
-Customise the variables inside the python file according to your use.
+python3 consul_sync.py \
+  --file /home/mradul/Desktop/GIT/certificate-authority/ssh-ca/id_rsa.pub \
+  --consul-url http://localhost:18500 \
+  --kv-key ca/pub-key/id_rsa.pub \
+  --token NEW_TOKEN_HERE
+
 ```
 ---
 
